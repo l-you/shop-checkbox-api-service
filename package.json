@@ -1,0 +1,5 @@
+{
+	"devDependencies": {
+		"@apiture/openapi-down-convert": "^0.14.2"
+	}
+}
