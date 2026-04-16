@@ -1,0 +1,4 @@
+{
+    "name": "Checkbox API middle Service",
+    "image":"mcr.microsoft.com/devcontainers/go:2.1-1.26-trixie"
+}
