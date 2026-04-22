@@ -1,11 +1,15 @@
 {
     "name": "Checkbox API middle Service",
     "image":"mcr.microsoft.com/devcontainers/go:2.1-1.26-trixie",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-        "version": "latest",
-        "pnpmVersion": "latest"
-    }
-  }
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {
+          "version": "latest",
+          "pnpmVersion": "latest"
+      }
+    },
+    "mounts": [
+      // Mount the host Codex state directory so auth.json and refreshed tokens persist.
+      "source=${localEnv:HOME}/.codex,target=/home/vscode/.codex,type=bind,consistency=cached"
+    ]
 
 }
